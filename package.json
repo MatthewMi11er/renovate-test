@@ -28,5 +28,5 @@
     "pretty-quick": "1.4.1",
     "semantic-release": "15.1.7",
     "sort-package-json": "1.12.0"
-  },
+  }
 }
