@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "config:base",
+    ":maintainLockFilesWeekly"
+  ],
+  "devDependencies": {
+    "packageRules": [
+      {
+        "packagePatterns": [
+          "eslint"
+        ],
+        "groupName": "eslint"
+      },
+      {
+        "packagePatterns": [
+          "semantic-release"
+        ],
+        "groupName": "semantic-release"
+      }
+    ]
+  },
+  "peerDependencies": {
+    "enabled": true
+  },
+  "packageRules": []
+
+}
