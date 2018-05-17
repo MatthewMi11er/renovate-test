@@ -13,13 +13,7 @@
       "groupName": "All Dev",
       "depTypeList": [
         "devDependencies"
-      ],
-      "circleci": {
-        "enabled": true,
-        "schedule": [
-          "every weekday"
-        ]
-      }
+      ]
     },
     {
       "packagePatterns": [
@@ -34,7 +28,10 @@
       "groupName": "semantic-release"
     }
   ],
-  "circleci": {
-    "enabled": false
-  }
+    "circleci": {
+      "enabled": true,
+      "schedule": [
+        "every weekday"
+      ]
+    }
 }
