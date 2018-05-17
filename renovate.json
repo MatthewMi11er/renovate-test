@@ -4,7 +4,6 @@
     ":maintainLockFilesWeekly"
   ],
   "packageRules": [
-
     { "packagePatterns":"*",
       "groupName":"All Dev",
       "depTypeList": [
@@ -23,6 +22,7 @@
       ],
       "groupName": "semantic-release"
     }
-  ]
+  ],
+  "prHourlyLimit": 4
 
 }
