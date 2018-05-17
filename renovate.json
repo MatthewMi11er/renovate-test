@@ -27,11 +27,5 @@
       ],
       "groupName": "semantic-release"
     }
-  ],
-    "circleci": {
-      "enabled": true,
-      "schedule": [
-        "every thursday"
-      ]
-    }
+  ]
 }
