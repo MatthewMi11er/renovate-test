@@ -5,23 +5,32 @@
   ],
   "devDependencies": {
     "packageRules": [
-      {
-        "packagePatterns": [
-          "eslint"
-        ],
-        "groupName": "eslint"
-      },
-      {
-        "packagePatterns": [
-          "semantic-release"
-        ],
-        "groupName": "semantic-release"
-      }
+
     ]
   },
   "peerDependencies": {
     "enabled": true
   },
-  "packageRules": []
+  "packageRules": [
+
+    { "packagePatterns":"*",
+      "groupName":"All Dev",
+      "depTypeList": [
+        "devDependencies"
+      ]
+    }
+    {
+      "packagePatterns": [
+        "eslint"
+      ],
+      "groupName": "eslint"
+    },
+    {
+      "packagePatterns": [
+        "semantic-release"
+      ],
+      "groupName": "semantic-release"
+    }
+  ]
 
 }
