@@ -15,6 +15,7 @@
         "devDependencies"
       ],
       "circleci": {
+        "enabled": true,
         "schedule": [
           "after 9pm on sunday"
         ]
