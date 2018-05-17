@@ -3,14 +3,6 @@
     "config:base",
     ":maintainLockFilesWeekly"
   ],
-  "devDependencies": {
-    "packageRules": [
-
-    ]
-  },
-  "peerDependencies": {
-    "enabled": true
-  },
   "packageRules": [
 
     { "packagePatterns":"*",
