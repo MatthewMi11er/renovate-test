@@ -1,14 +1,24 @@
 {
   "extends": [
     "config:base",
-    ":maintainLockFilesWeekly"
+    ":maintainLockFilesWeekly",
+    ":widenPeerDependencies",
+    ":prHourlyLimit4",
+    ":rebaseStalePrs",
+    ":prNotPending"
   ],
   "packageRules": [
-    { "packagePatterns":"*",
-      "groupName":"All Dev",
+    {
+      "packagePatterns": "*",
+      "groupName": "All Dev",
       "depTypeList": [
         "devDependencies"
-      ]
+      ],
+      "circleci": {
+        "schedule": [
+          "after 9pm on sunday"
+        ]
+      }
     },
     {
       "packagePatterns": [
@@ -23,6 +33,7 @@
       "groupName": "semantic-release"
     }
   ],
-  "prHourlyLimit": 4
-
+  "circleci": {
+    "enabled": false
+  }
 }
