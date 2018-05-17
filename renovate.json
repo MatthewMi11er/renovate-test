@@ -31,7 +31,7 @@
     "circleci": {
       "enabled": true,
       "schedule": [
-        "every weekday"
+        "every thursday"
       ]
     }
 }
